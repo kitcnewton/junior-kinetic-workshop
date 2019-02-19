@@ -194,6 +194,21 @@ description: Junior Kinetic Workshop Schedule
 	<br>
 	<h5>Gunjan Pahlani</h5>
 	<p>Title and Abstract TBD</p>
+	<br>
+	<br>
+	<h5>William Taitano</h5>
+	<p>Title: High-Order Low-Order Nonlinear Convergence Accelerator for the Rosenbluth-Fokker-Planck Collision Operator and Applications to Multiscale Problems in Inertial Confinement Fusion (ICF)
+	<br>
+	Abstract: In weakly coupled plasmas, the integro-differential Fokker-Planck collision operator describes the dynamical collisional relaxation of the plasma distribution function in the velocity space. The operator is quadratically nonlinear, features exact conservation of mass, momentum, and energy, satisfies the Boltzmann H-theorem, preserves positivity of the distribution function, and features a unique equilibrium solution (i.e., a drifting Maxwellian). Additionally, the collisional velocity space transport coefficients are obtained from integrals of the distribution function (the so-called Rosenbluth potentials). The integral formulation, together with the above-mentioned properties make the numerical solution aspects of this system exceedingly challenging to deal with.
+	<br>Often, collision times, τcol, are much shorter than dynamical timescales of interest (e.g., in ICF problems, often >104), and the use of implicit methods (i.e., Newton, accelerated Picard [1], etc.) is warranted. Fully implicit methods are advocated here, owing for the need to exactly preserve conservation laws, and to ensure asymptotic convergence to the Maxwellian when appropriate [2]. However, fully implicit methods demand nonlinear iterative solvers, which developing an effective one is challenging in this context owing to the non-locality of the formulation (via the Rosenbluth potentials), leading to dense linear systems.
+	<br>To effectively deal with the numerical challenges arising from non-locality, we explore a multiscale iterative strategy based on high-order/low-order (HOLO) convergence accelerator scheme [3,4] for the full nonlinear Rosenbluth-Fokker-Planck collision operator. HOLO employ an LO (fluid) moment system to accelerate the convergence of the HO (kinetic) system. In turn, the LO system is closed self-consistently with the HO system. The LO system is comprised of equations for plasma number density, drift velocity, and temperature. These quantities, in turn, inform an LTE approximation for the Rosenbluth potentials plus a perturbation term [of O(Δt/τcol)<< 1] computed from the HO solution. This reformulation shifts the non-local contributions through the Rosenbluth potentials from the HO system to the LO one, which lives in a low-dimensional space and where they can be dealt with efficiently. Numerical experiments in challenging applications in ICF (i.e., shocks and implosions) will demonstrate the enabling capabilities of the HOLO scheme when Δt >> τcol.
+	<br>[1] Anderson J. Assoc. Comput. Mach., 12, 547-560 (1965).
+	<br>[2] Taitano et al., J. Comp. Phys., 297, 357-380 (2015).
+	<br>[3] Taitano et al., J. Comp. Phys., 284, 737-757 (2015).
+	<br>[4] Chacón et al., J. Comp. Phys., 330, 21-45 (2017).
+	</p>
+	<br>
+	<br>
 </p>
 </div>
     </div>
